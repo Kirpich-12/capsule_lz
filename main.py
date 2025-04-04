@@ -2,22 +2,12 @@ from avocado import Avocado
 from log import logging
 
 @logging
-def fr():
-    print('Hello World!')
-
-def sec():
+def avoc():
     arc = Avocado('avocado.csv')
     arc.paint()
 
-
 def main():
-    usr_ch = input('Write 1 if you want to see the first task, and 2 if the second\n')
-    if usr_ch == '1':
-        fr()
-    elif usr_ch == '2':
-        sec()
-    else:
-        print('Не надо так делать пожалуйста, пиши уже нормально')
+    avoc()
 
 if __name__ == '__main__':
     main()
