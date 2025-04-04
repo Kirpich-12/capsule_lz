@@ -11,7 +11,7 @@ def sec():
 
 
 def main():
-    usr_ch = input('Write 1 if you want to see the first task, and 2 if the second')
+    usr_ch = input('Write 1 if you want to see the first task, and 2 if the second\n')
     if usr_ch == '1':
         fr()
     elif usr_ch == '2':
@@ -19,3 +19,5 @@ def main():
     else:
         print('Не надо так делать пожалуйста, пиши уже нормально')
 
+if __name__ == '__main__':
+    main()
