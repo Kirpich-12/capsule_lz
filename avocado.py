@@ -9,7 +9,7 @@ class Avocado:
     
     def paint(self):
         df = pd.read_csv(self.link)
-        data_pice = dict(zip(df['Date'], df['AveragePrice'] ))
+        data_pice = dict(zip(list(df['Date']), list(df['AveragePrice']) ))
         sr_data_prise = dict(sorted(data_pice.items()))
         xlist = list(sr_data_prise.keys())#список сорт. дат
         ylist = list(sr_data_prise.values())#список сорт. цен
